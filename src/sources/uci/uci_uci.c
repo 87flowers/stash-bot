@@ -25,6 +25,7 @@ void	uci_uci(const char *args)
 	puts("id name Stash v18.0");
 	puts("id author Morgan Houppin (@mhouppin)");
 	puts("option name Hash type spin default 16 min 1 max 131072");
+	puts("option name Threads type spin default 1 min 1 max 1");
 	puts("option name Clear Hash type button");
 	puts("option name MultiPV type spin default 1 min 1 max 16");
 	puts("option name Minimum Thinking Time type spin default 20 min 0 max 30000");
