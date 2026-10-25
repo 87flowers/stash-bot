@@ -95,7 +95,6 @@ void	uci_bench(const char *args)
 
 	printf("Benchmark report:\n");
 	printf("Total time:   %lu milliseconds\n", bench_time);
-	printf("Total nodes:  " SIZE_FORMAT "\n", total_nodes);
-	printf("Nodes/second: " SIZE_FORMAT "\n", (size_t)(((uint64_t)total_nodes * 1000) / (uint64_t)bench_time));
+	printf("Bench: " SIZE_FORMAT " nodes " SIZE_FORMAT " nps\n", total_nodes, (size_t)(((uint64_t)total_nodes * 1000) / (uint64_t)bench_time));
 	fflush(stdout);
 }
